@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Ravn Programming Challenge</title>
+<link rel='shortcut icon' href='/images/favicon.ico' type='image/x-icon'/ >
+<link href="jquery-ui.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="jquery-ui.min.js" type="text/javascript"></script>
+<script src="scripts/filter.js" type="text/javascript"></script>
+<script src="scripts/ravn.js" type="text/javascript"></script>
+<style>
+@import url(styles/ravn_style.css);
+</style>
+</head>
+<body>
+<div id="header-wrap">
+	<div id="header-container">
+		<div id="header">
+			<h1><a href="http://ravn.com/"><img src="images/layout/logo2.png" /></a><p><a href="#"><img src="images/layout/city.png" /></a></p></h1>
+
+            
+			<ul>
+				<li><a href="#">How It Works</a></li>
+				<li><a href="#">Popular</a></li>
+				<li><a href="#">Welcome Pinar</a></li>
+			
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="container">
+<div class="nav-wrap">
+<div class="nav-container">
+<div class="nav">
+<a href="#" class="nav button blue gradient">Date Ideas</a>
+<a href="#" class="nav button blue gradient">Outdoors</a>
+<a href="#" class="nav button blue gradient">Tours</a>
+<a href="#" class="nav button blue gradient">Arts &amp; Culture</a>
+<a href="#" class="nav button blue gradient">Sports</a>
+<a href="#" class="nav button blue gradient">Spas  &amp; Culture</a>
+<a href="#" class="nav button blue gradient">Family Time</a>
+<a href="#" class="nav button blue gradient">Corporate Events</a>
+</div>
+ </div>
+</div>
+ <div id="wrapper">
+ <form class="searchform">
+<input class="searchfield" type="text" value="Find things to do..." onfocus="if (this.value == 'Find things to do...') {this.value = '';}" onblur="if (this.value == '') {this.value = 'Find things to do...';}">
+<input class="searchbutton" type="submit" value="Go">
+</form>
+ </div>
+<div class="content rounded shadow" id="service_list">
+
+		</div>
+<script src="scripts/ravndata.js" type="text/javascript"></script>
+		
+ <div class="sidebar">
+
+ 
+          <div class="sidebar_list">
+            <h3>Filter by Price</h3>
+            <span id="price_range_label" style="margin:50px;">$0-$100</span>
+            <div id="price_slider"></div>
+            <input type="hidden" id="price_filter"/>
+          </div>
+			<div class="sidebar_list">
+            <h3>Filter by TimeLeft</h3>
+            <span id="timeleft_range_label" style="margin:30px;">0 days - 10 days</span>
+            <div id="timeleft_slider"></div>
+            <input type="hidden" id="timeleft_filter"/>
+          </div>
+          
+           
+    <div class="sidebar_list">
+          <h3>Filter by Category</h3>
+            <ul id="category_list">
+              <li>
+              <input id="category_all" value="all" type="checkbox">
+              <span >All</span>
+              </li>
+              <li>
+              <input id="category_27" value="27" type="checkbox">
+              <span>Arts and crafts </span>
+              </li>
+              <li>
+              <input id="category_28" value="28" type="checkbox">
+              <span>Beauty and style</span>
+              </li>
+              <li>
+              <input id="category_29" value="29" type="checkbox">
+              <span>Computer and Technology</span>
+              </li>
+              <li>
+              <input id="category_30" value="30" type="checkbox">
+              <span>Education and literature</span>
+              </li>
+              <li >
+              <input id="category_31" value="31" type="checkbox">
+              <span>Family</span>
+              </li>
+              <li >
+              <input id="category_32" value="32" type="checkbox">
+              <span>Food and drinks</span>
+              </li>
+              <li >
+              <input id="category_33" value="33" type="checkbox">
+              <span>Health and wellbeing </span>
+              </li>
+              <li >
+              <input id="category_34" value="34" type="checkbox">
+              <span>History and Culture</span>
+              </li>
+              <li >
+              <input id="category_35" value="35" type="checkbox">
+              <span>Home and garden </span>
+              </li>
+              <li >
+              <input id="category_36" value="36" type="checkbox">
+              <span>Money and career</span>
+              </li>
+              <li >
+              <input id="category_37" value="37" type="checkbox">
+              <span>Nightlife </span>
+              </li>
+              <li >
+              <input id="category_38" value="38" type="checkbox">
+              <span>Recreation and outdoors </span>
+              </li>
+              <li >
+              <input id="category_39" value="39" type="checkbox">
+              <span>Sports </span>
+              </li>
+              <li >
+              <input id="category_40" value="40" type="checkbox">
+              <span>Tours </span>
+              </li>
+            </ul>
+          </div>
+
+ 
+</div>
+         
+
+
+		<div id="footer">
+<ul id="footer_menu">
+ <li class="imgmenu"><a href="#"><span>Home</span></a></li>
+ <li><a href="#">Overview</a></li>
+ <li><a href="#">RAVN</a></li>
+ <li><a href="#">Testimonials</a></li>
+ <li><a href="#">Contact</a></li>
+
+ </ul>
+ 
+ <ul id="social_icons">
+ <li><a href="#" ><img src='http://nature.berkeley.edu/breakthroughs/socialmedia/facebook.png' alt="" /><span>Facebook</span></a></li>
+ <li><a href="#" ><img src='http://nature.berkeley.edu/breakthroughs/socialmedia/twitter.png' alt="" /><span>Twitter</span></a></li>
+ <li><a href="#" ><img src='http://nature.berkeley.edu/breakthroughs/socialmedia/digg.png' alt="" /><span>Digg</span></a></li>
+
+ </ul>
+		</div>
+        
+
+</body>
+
+</html>
